@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/Unify_Login[0].css">
+</head>
+<body class="page" id="page">
+  <if-block device="pc || tab || lap || tv">
+
+      <section class="form {
+          height: .page_H / 1.2;
+          width: .page_W / 1.3;
+        }">
+        
+        <section class="form-image {
+            height: $t$.form_H / 1.1;
+            width: ($t$.form_W / 2.25) - ($t$.form_H - ($t$.form_H / 1.1));
+        }">
+
+        <img class="form-image-img {
+            width: $t$.form-image_W / 1.5;
+        }" src="https://i.postimg.cc/3wRXXvyy/blue-upscalemedia-transformed.png" style="
+        filter: brightness(0) invert(1);" alt="" srcset="">
+        
+<section class="form-image-main-img {
+    width: $t$.form-image_W;
+}">
+<img src="https://i.postimg.cc/TwmBQvdy/sahsgaimage-removebg-preview.png" class="{
+    width: $t$.form-image_W;
+    min-height: $t$.form-image_H - $t$.form-image@img_W;
+}" alt="" srcset="">
+</section>
+
+        </section>
+        <section class="form__form-content {
+            height: .form_H / 1.1;
+            width: .form_W / 2;
+        }">
+
+        <section class="form-content__heading {
+            height: $t$.form__form-content_H / 6;
+            width: $t$.form__form-content_W / 1.1;
+            margin-bottom: $t$.form__form-content_H / 12 !i;
+             
+        }">
+            <h1 class="{
+                fs: ($t$.form-content__heading_H  + $t$.form-content__heading_W) / 18; 
+            }">Welcome back!</h1>
+            
+            <h2 class="{
+                fs: ($t$.form-content__heading_H  + $t$.form-content__heading_W) / 42; 
+            }">We are happy to see you again!</h2>
+
+        </section>
+
+        <section data-inputType="both" class="form-content__input-box _input-box _email {
+            height: ($t$.form__form-content_H - ($t$.form-content__heading_H)) / 6;
+            width: $t$.form__form-content_W / 1.1;
+        }">
+            <main onclick="inputChange(this)" class="{
+                height: ($t$.form-content__input-box_H / 1.8) - 2;
+                width: $t$.form-content__input-box_W - ($t$.form-content__input-box_W - $t$.form-content__input-box_H);
+                border-width: 2;
+            }">
+            <i class="fa-solid fa-user {
+                fs: ($t$.form-content__input-box@main_H + $t$.form-content__input-box@main_W) / 5;
+            }"></i>
+                
+            </main>
+            <input connect="email-text" autocomplete="off" type="email" class="{
+                height: ($t$.form-content__input-box_H / 1.8) - 2;
+                width: $t$.form-content__input-box_W - $t$.form-content__input-box@main_W;  
+                border-width: 2;
+                fs: ($t$.form-content__input-box@main_H + $t$.form-content__input-box@main_W) / 9;
+            }" placeholder="Email address or username">
+
+            <section class="input-box__error {
+                height: $t$.form-content__input-box_H - ($t$.form-content__input-box@main_H + 2);
+            }">
+                <h1 class="_error-container _error-container-none {
+                  fs: ($t$.input-box__error_H + $t$.input-box__error_W) / 50;
+                  max-height: $t$.input-box__error_H;
+                }">
+                   <i class="fa-solid fa-exclamation-circle {
+                    fs: ($t$.input-box__error_H + $t$.input-box__error_W) / 50;
+                   }"></i> 
+                   <span class="_error-text {
+                    left:($t$.input-box__error_H + $t$.input-box__error_W) / 35;
+                    fs: ($t$.input-box__error_H + $t$.input-box__error_W) / 50;
+                    max-width: $t$.input-box__error_W - (($t$.input-box__error_H + $t$.input-box__error_W) / 50);
+
+                   }">Error message goes here</span>
+                </h1>
+            </section>
+            
+        </section>
+        <section class="form-content__input-box form-content__input-box--password _input-box _password {
+            height: ($t$.form__form-content_H - ($t$.form-content__heading_H)) / 6;
+            width: $t$.form__form-content_W / 1.1;
+        }">
+            <main class="{
+                height: ($t$.form-content__input-box_H / 1.8) - 2;
+                width: $t$.form-content__input-box_W - ($t$.form-content__input-box_W - $t$.form-content__input-box_H);
+                border-width: 2;
+            }">
+            <i class="fa-solid fa-key {
+                fs: ($t$.form-content__input-box@main_H + $t$.form-content__input-box@main_W) / 5;
+            }"></i>
+                
+            </main>
+            <input connect="password-text" autocomplete="off" type="password" class="{
+                height: ($t$.form-content__input-box_H / 1.8) - 2;
+                width: $t$.form-content__input-box_W - $t$.form-content__input-box@main_W;  
+                border-width: 2;
+                fs: ($t$.form-content__input-box@main_H + $t$.form-content__input-box@main_W) / 9;
+            }" placeholder="Password">
+
+            <section class="input-box__details {
+                height: $t$.form-content__input-box_H - ($t$.form-content__input-box@main_H + 2);
+                width: $t$.form-content__input-box_W;
+            }">
+          
+        
+            <aside class="{
+                max-width: $t$.input-box__details_W / 3;
+                height: $t$.input-box__details_H;
+                fs: ($t$.input-box__details@aside_H + $t$.input-box__details_W) / 45;
+            }">
+                <a href="">Forgot password?</a>
+            </aside>
+              <section class=" _error-container _error-container-none {
+                height: $t$.input-box__details_H;
+                width: $t$.input-box__details_W -  $t$.input-box__details@aside_W;
+                
+            }">
+                <i class="fa-solid fa-exclamation-circle {
+                    fs: ($t$.input-box__details_H + $t$.input-box__details_W) / 40; 
+                }"></i>
+                <h1 class=" _error-text {
+                    width: $t$.input-box__details@section_W - (($t$.input-box__details_H + $t$.input-box__details_W) / 40);
+                    fs: ($t$.input-box__details_H + $t$.input-box__details_W) / 48;
+                    left: ($t$.input-box__details_H + $t$.input-box__details_W) / 100; 
+                }">Error message goes here</h1>
+        </section>
+                
+            </section>
+           
+            
+        </section>
+
+     <button onclick="loginButtonState(true)" class="form-content__login-btn _login-btn _login-btn-normal  {
+        height: ($t$.form__form-content_H - (($t$.form__form-content@.form-content__input-box_H * 2) + $t$.form__form-content@.form-content__heading_H)) / 6;
+
+     }">
+     <section class="login-btn__login-content {
+        height: $t$.form-content__login-btn_H / 1.2;
+        width:  $t$.form-content__login-btn_W - ($t$.form-content__login-btn_H - ($t$.form-content__login-btn_H / 1.2));
+     }">
+     <section class="login-content__login-button _login-btn-loading-btn">
+
+       
+         <span class=" {
+            fs: ($t$.login-content__login-button_H + $t$.login-content__login-button_W) / 15;
+            
+         }">Login</span>
+      
+        </section>
+        <section class="login-content__login-loader _login-btn-loader">
+            <img src="https://i.pinimg.com/originals/b4/4e/22/b44e229598a8bdb7f2f432f246fb0813.gif" alt="" srcset="">
+        </section>
+        
+     </section>
+     </button>
+
+     <section class="form-content__login-providers {
+        width: $t$.form__form-content@.form-content__input-box_W;
+        height: ($t$.form__form-content_H - (($t$.form__form-content@.form-content__input-box_H * 2) + $t$.form__form-content@.form-content__heading_H +  $t$.form__form-content@.form-content__login-btn_H)) / 2.5;
+     }">
+<button  class=" form-content__google _login-google {
+    height: $t$.form-content__login-providers_H / 2.2;
+    width: $t$.form-content__login-providers_W / 2.1;
+    
+}">
+    
+        <img class="{
+            width: $t$.form-content__login-providers@button_W / 10;
+        }" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" alt="Google logo" width="24">
+
+
+    <h1 class=" {
+        fs: ($t$.form-content__login-providers@button_H + $t$.form-content__login-providers@button_W) / 21;
+    }">Login with Google</h1>
+</button>
+<button class=" form-content__facebook _login-facebook {
+    height: $t$.form-content__login-providers_H / 2.2;
+    width: $t$.form-content__login-providers_W / 2.1;
+    
+}">
+    
+        <img class="{
+            width: $t$.form-content__login-providers@button_W / 8;
+        }" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Google logo" width="24">
+
+
+    <h1 class=" {
+        fs: ($t$.form-content__login-providers@button_H + $t$.form-content__login-providers@button_W) / 18;
+    }">Login with Facebook</h1>
+</button>
+     </section>
+
+     <section class="form-content__no-account {
+        height: ($t$.form__form-content_H - ($t$.form__form-content@.form-content__heading_H + ($t$.form__form-content@.form-content__input-box_H * 2) + $t$.form__form-content@.form-content__login-btn_H + $t$.form__form-content@.form-content__login-providers_H)) / 2;
+        width: $t$.form__form-content_W;
+     }">
+<a href="" class="{
+    fs: ($t$.form-content__no-account_H + $t$.form-content__no-account_W) / 45;
+}">Don't have an account? <span>Create one</span></a>
+     </section>
+
+        
+
+        </section>
+
+    </section>
+</if-block>
+<if-block device="phone">
+<section class="phone-form {
+    height: .page_H / 1.1;
+    width: .page_W / 1.1;
+}">
+<img class="phone-form-logo {
+    width: $t$.phone-form_W / 1.3;
+}" src="https://i.postimg.cc/3wRXXvyy/blue-upscalemedia-transformed.png" alt="" srcset="">
+
+<section class="phone-form-content {
+    width: $t$.phone-form_W / 1.1;
+    height: ($t$.phone-form_H - ($t$.phone-form@.phone-form-logo_H)) - (($t$.phone-form_W - ($t$.phone-form_W / 1.1)) / 2);
+}">
+<section class="phone-form-content-heading {
+    height: .phone-form-content_H / 5;
+    width: .phone-form-content_W;
+}">
+    <h1 class="{
+        fs: (.phone-form-content-heading_H + .phone-form-content-heading_W) / 18;
+    }">Welcome back!</h1>
+    <h2 class="{
+        fs: (.phone-form-content-heading_H + .phone-form-content-heading_W) / 25;
+    }">We are happy to see you again!</h2>
+</section>
+
+<section data-inputType="both" class="phone-form-content__input-box _input-box _email {
+    height: (.phone-form-content_H - (.phone-form-content-heading_H)) / 4;
+    width: .phone-form-content_W / 1.1;
+}">
+<main class="{
+    height: $t$.phone-form-content__input-box_H / 1.3;
+    width: $t$.phone-form-content__input-box_W;
+}">
+<aside class="{
+    height: $t$.phone-form-content__input-box@main_H / 2;
+    width:  $t$.phone-form-content__input-box@main_W;
+}">
+<span onclick="inputChange(this)" class="{
+            height: $t$.phone-form-content__input-box@main@aside_H / 1.1;
+        width: $t$.phone-form-content__input-box@main@aside_H / 1.1;
+}">
+
+    <i class="fa-solid fa-user {
+        fs: ($t$.phone-form-content__input-box@main@aside_H + $t$.phone-form-content__input-box@main@aside_W) / 20;
+
+    }"></i>
+    
+</span>
+<h1 class=" _input-text {
+    fs: ($t$.phone-form-content__input-box@main@aside_H + $t$.phone-form-content__input-box@main@aside_W) / 25;
+}">Email address or username</h1>
+</aside>
+<input type="email" class="{
+    height: $t$.phone-form-content__input-box@main_H - ($t$.phone-form-content__input-box@main@aside_H - 2);
+     fs: ($t$.phone-form-content__input-box@main@aside_H + $t$.phone-form-content__input-box@main@aside_W) / 30;
+}" placeholder="Email address or username" host="email-text">
+</main>
+<h6 class=" _error-container _error-container-none {
+    height: $t$.phone-form-content__input-box_H - $t$.phone-form-content__input-box@main_H;
+    width: $t$.phone-form-content__input-box_W;
+    
+}">
+<i class="fa-solid fa-exclamation-circle {
+    fs: ($t$.phone-form-content__input-box@h6_H + $t$.phone-form-content__input-box@h6_W) / 30;
+}"></i>
+<span class=" _error-text {
+    fs: ($t$.phone-form-content__input-box@h6_H + $t$.phone-form-content__input-box@h6_W) / 30;
+    width: $t$.phone-form-content__input-box@h6_W -  ($t$.phone-form-content__input-box@h6@i_W * 1.5);
+marginL: $t$.phone-form-content__input-box@h6@i_W / 2 !i;
+}">Error message goes here</span></h6>
+</section>
+
+<section class="phone-form-content__input-box _input-box _password {
+    height: (.phone-form-content_H - (.phone-form-content-heading_H)) / 4;
+    width: .phone-form-content_W / 1.1;
+}">
+<main class="{
+    height: $t$.phone-form-content__input-box_H / 1.3;
+    width: $t$.phone-form-content__input-box_W;
+}">
+<aside class="{
+    height: $t$.phone-form-content__input-box@main_H / 2;
+    width:  $t$.phone-form-content__input-box@main_W;
+}">
+<span  class="{
+            height: $t$.phone-form-content__input-box@main@aside_H / 1.1;
+        width: $t$.phone-form-content__input-box@main@aside_H / 1.1;
+}">
+
+    <i class="fa-solid fa-key {
+        fs: ($t$.phone-form-content__input-box@main@aside_H + $t$.phone-form-content__input-box@main@aside_W) / 20;
+
+    }"></i>
+    
+</span>
+<h1 class=" _input-text {
+    fs: ($t$.phone-form-content__input-box@main@aside_H + $t$.phone-form-content__input-box@main@aside_W) / 25;
+}">Password</h1>
+<a href="" class="{
+    fs: ($t$.phone-form-content__input-box@main@aside_H + $t$.phone-form-content__input-box@main@aside_W) / 35;
+}">Forgot password?</a>
+</aside>
+<input type="password" class="{
+    height: $t$.phone-form-content__input-box@main_H - ($t$.phone-form-content__input-box@main@aside_H - 2);
+     fs: ($t$.phone-form-content__input-box@main@aside_H + $t$.phone-form-content__input-box@main@aside_W) / 30;
+}" placeholder="Password" host="password-text">
+</main>
+<h6 class=" _error-container _error-container-none {
+    height: $t$.phone-form-content__input-box_H - $t$.phone-form-content__input-box@main_H;
+    width: $t$.phone-form-content__input-box_W;
+    
+}">
+<i class="fa-solid fa-exclamation-circle {
+    fs: ($t$.phone-form-content__input-box@h6_H + $t$.phone-form-content__input-box@h6_W) / 30;
+}"></i>
+<span class=" _error-text {
+    fs: ($t$.phone-form-content__input-box@h6_H + $t$.phone-form-content__input-box@h6_W) / 30;
+    width: $t$.phone-form-content__input-box@h6_W -  ($t$.phone-form-content__input-box@h6@i_W * 1.5);
+marginL: $t$.phone-form-content__input-box@h6@i_W / 2 !i;
+}">Error message goes here</span></h6>
+</section>
+<button onclick="loginButtonState(true)" class="phone-login-btn _login-btn _login-btn-normal { 
+    height: (.phone-form-content_H - (.phone-form-content-heading_H + (.phone-form-content__input-box_H + .phone-form-content__input-box_H))) / 5;  
+}">
+  <section class="phone-login-btn-text { 
+      height: .phone-login-btn_H / 1.5; 
+      width: .phone-login-btn_W - (.phone-login-btn_H - (.phone-login-btn_H / 2)); 
+  }">
+    <h1 class=" {
+        fs: ($t$.phone-login-btn@.phone-login-btn-text_H + $t$.phone-login-btn@.phone-login-btn-text_W) / 10;
+    }">Login</h1>
+  </section>
+
+  <section class="phone-login-btn-loader { 
+      height: .phone-login-btn_H / 1.5; 
+      width: .phone-login-btn_W - (.phone-login-btn_H - (.phone-login-btn_H / 2)); 
+  }">
+    <img class="{ 
+        width: .phone-login-btn-loader_W; 
+    }" src="https://i.pinimg.com/originals/b4/4e/22/b44e229598a8bdb7f2f432f246fb0813.gif" alt="">
+  </section>
+</button>
+
+<section class="phone-login-providers {
+    height: .phone-form-content_H / 4;
+    width: .phone-form-content_W / 1.1;
+}">
+<button onclick="loginWithGoogle()" class=" {
+    height: .phone-login-providers_H / 3;
+    width: .phone-login-providers_W / 1.1;
+    marginB: .phone-login-providers_H / 12 !i;
+}">
+<img class=" {
+    width: $t$.phone-login-providers@button_W / 10;
+}" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" alt="" srcset="">
+    <h1 class=" {
+        fs: ($t$.phone-login-providers@button_H + $t$.phone-login-providers@button_W) / 25;
+    }">Login with Google</h1>
+</button>
+<button class=" {
+    height: .phone-login-providers_H / 3;
+    width: .phone-login-providers_W / 1.1;
+    phone-facebook
+}">
+<img onclick="loginWithFacebook()" class=" {
+    width: $t$.phone-login-providers@button_W / 10;
+}" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="" srcset="">
+    <h1 class=" {
+        fs: ($t$.phone-login-providers@button_H + $t$.phone-login-providers@button_W) / 25;
+    }">Login with Facebook</h1>
+</button>
+</section>
+
+<section class="phone-signup {
+    height: (.phone-form-content_H - (.phone-form-content-heading_H + (.phone-form-content__input-box_H * 2) + .phone-login-btn_H + .phone-login-btn-loader_H)) / 5;
+    width: .phone-form-content_W;
+}">
+    <a href="" class=" {
+        fs: ($t$.phone-signup_H + $t$.phone-signup_W) / 30;
+    }">Don't have an account? <span>Create one</span></a>
+</section>
+
+
+</section>
+
+</section>
+</if-block>
+  
+
+
+
+    <script src="./js/mainClassSyntax[0].js"></script>
+    <script src="./js/Unify_Login[0].js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+       
+</body>
+</html>
+<!-- 
+// things to do
+
+
+search this in this page it leads to phone port
+<reminder date+"03-08-2025">
+    go there and adjust sizing, maybe add a button in right to change email to username to both
+    
+    -->
+
+
+
+<!--
+things to do when putting this in real project:
+
+!) shift updated main.js to general.js in real project
+    -->
+ 
